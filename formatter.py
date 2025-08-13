@@ -9,7 +9,9 @@ def format_summary(username: str, stats: GitHubStats) -> str:
     summary += f"🏗️ **Repos Contributed To:** {stats.total_repos_contrib}\n"
     summary += f"📈 **Lines Added (in PRs):** {stats.additions}\n"
     summary += f"📉 **Lines Deleted (in PRs):** {stats.deletions}\n"
+    summary += f"📜 **Lines Added (in Commits):** {stats.commit_additions}\n" 
+    summary += f"📝 **Lines Deleted (in Commits):** {stats.commit_deletions}\n" 
     summary += f"⭐ **Total Stars on Repos:** {stats.total_stars}\n"
     summary += f"🍴 **Total Forks on Repos:** {stats.total_forks}\n\n"
-    summary += "Share this to showcase your contributions! Created by Gleb Kalyta."
+    summary += "Share this bot! Created by Gleb Kalyta."
     return summary
